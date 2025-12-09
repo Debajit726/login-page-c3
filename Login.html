@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <div class="container reader-container">
+        <form id="loginForm">
+            <center>
+                <h1> Login Page</h1>
+                <br>
+                <br>
+                <section class="section-p1">
+                    <div class="username-icon">
+                    <h4>Username <span class="required">*</span></h4><input type="text" id="usernameInput" placeholder="Enter your Username">
+                    <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <span class="error-message" id="usernameError">Username is mandatory</span>
+                </section>
+                <section class="section-m1">
+                    <h4>Password <span class="required">*</span></h4>
+                    <div class="password-wrapper">
+                        <i class="fa-solid fa-key" id="pass"></i>
+                        <button id="togglePassword" type="button" aria-label="Show password" aria-pressed="false" class="toggle-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <input type="password" id="passwordInput" placeholder="Enter your Password">
+                    </div>
+                    <span class="error-message" id="passwordError">Password is mandatory</span>
+                </section>
+                <br>
+                <h5>Not Registered? <a href="#">Sign Up</a></h5>
+                <h5><a href="#">Forget Password?</a></h5>
+                <section class="button-t1"><input type="submit" value="Login" id="loginBtn"></section>
+            </center>
+        </form>
+        <script src="login.js"></script>
+    </div>
+</body>
+
+</html>
